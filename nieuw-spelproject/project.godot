@@ -11,7 +11,11 @@ config_version=5
 [application]
 
 config/name="Nieuw spelproject"
+<<<<<<< Updated upstream
 run/main_scene="uid://ddtbib60xuepr"
+=======
+run/main_scene="uid://bh0br4skdtjic"
+>>>>>>> Stashed changes
 config/features=PackedStringArray("4.5", "C#", "GL Compatibility")
 config/icon="res://icon.svg"
 

@@ -1,10 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://ddtbib60xuepr"]
+[gd_scene load_steps=2 format=3 uid="uid://bh0br4skdtjic"]
 
 [ext_resource type="Texture2D" uid="uid://dv4pny5pf45cm" path="res://224fa97fe29cfa03f24c657addcaa77e.jpg" id="1_oabld"]
 
 [node name="Background" type="Node2D"]
 texture_filter = 1
 
+<<<<<<< Updated upstream
 [node name="Parallax2D" type="Parallax2D" parent="."]
 repeat_size = Vector2(1150, 0)
 autoscroll = Vector2(-67, 0)
@@ -14,4 +15,9 @@ ignore_camera_scroll = true
 [node name="BgImage" type="Sprite2D" parent="Parallax2D"]
 position = Vector2(575.5, 324.12503)
 scale = Vector2(1.8418531, 1.3887095)
+=======
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1151.0
+offset_bottom = 644.0
+>>>>>>> Stashed changes
 texture = ExtResource("1_oabld")
