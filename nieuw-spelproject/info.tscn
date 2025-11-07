@@ -1,3 +1,10 @@
-[gd_scene load_steps=0 format=3 uid="uid://buhv2f83e7flc"]
+[gd_scene format=3 uid="uid://buhv2f83e7flc"]
 
 [node name="Info" type="Node2D"]
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_left = 3.0
+offset_top = 1.0
+offset_right = 1152.0
+offset_bottom = 647.0
+text = "Dit spel heet Mountain Hike Mountaneering"
