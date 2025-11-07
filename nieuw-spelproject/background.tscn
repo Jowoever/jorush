@@ -6,12 +6,12 @@
 texture_filter = 1
 
 [node name="Parallax2D" type="Parallax2D" parent="."]
-repeat_size = Vector2(620, 0)
+repeat_size = Vector2(1150, 0)
 autoscroll = Vector2(-67, 0)
 repeat_times = 2
 ignore_camera_scroll = true
 
 [node name="BgImage" type="Sprite2D" parent="Parallax2D"]
-position = Vector2(569, 317.00003)
-scale = Vector2(1.8210863, 1.3580645)
+position = Vector2(575.5, 324.12503)
+scale = Vector2(1.8418531, 1.3887095)
 texture = ExtResource("1_oabld")
