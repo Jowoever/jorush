@@ -12,7 +12,11 @@ config_version=5
 
 config/name="Nieuw spelproject"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 run/main_scene="uid://ddtbib60xuepr"
+=======
+run/main_scene="uid://bh0br4skdtjic"
+>>>>>>> Stashed changes
 =======
 run/main_scene="uid://bh0br4skdtjic"
 >>>>>>> Stashed changes
