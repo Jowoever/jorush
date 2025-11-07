@@ -1,8 +1,13 @@
 [gd_scene load_steps=4 format=3 uid="uid://0kjy3uw3mi5n"]
 
+<<<<<<< HEAD
 [ext_resource type="Script" uid="uid://be4m384cfxvm1" path="res://info.gd" id="1_e7ead"]
 [ext_resource type="Script" uid="uid://c5b4rvgnfhrd5" path="res://start.gd" id="1_pj8ew"]
 [ext_resource type="Texture2D" uid="uid://cl5ys0rb5a48t" path="res://Screenshot 2025-11-07 173016.png" id="2_by3jj"]
+=======
+[ext_resource type="Script" path="res://info.gd" id="1_e7ead"]
+[ext_resource type="Texture2D" uid="uid://j35t3uq6syiq" path="res://143dba5abfe2f2b7b98020331d4feb14.png" id="2_by3jj"]
+>>>>>>> eca8a842474775c6b83b0ce58eee4b8078b8cca5
 
 [node name="mainmen" type="Control"]
 layout_mode = 3
@@ -52,8 +57,8 @@ script = ExtResource("1_e7ead")
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground"]
-position = Vector2(574.49994, 322.50003)
-scale = Vector2(1.4053724, 0.5424727)
+position = Vector2(417.5001, 325.50003)
+scale = Vector2(2.0902777, 1.1440972)
 texture = ExtResource("2_by3jj")
 
 [connection signal="pressed" from="Start" to="Start" method="_on_pressed"]
