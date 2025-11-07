@@ -2,9 +2,16 @@
 
 [ext_resource type="Texture2D" uid="uid://dv4pny5pf45cm" path="res://224fa97fe29cfa03f24c657addcaa77e.jpg" id="1_oabld"]
 
-[node name="Main" type="Node2D"]
+[node name="Background" type="Node2D"]
+texture_filter = 1
 
-[node name="TextureRect" type="TextureRect" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="Parallax2D" type="Parallax2D" parent="."]
+repeat_size = Vector2(620, 0)
+autoscroll = Vector2(-67, 0)
+repeat_times = 2
+ignore_camera_scroll = true
+
+[node name="BgImage" type="Sprite2D" parent="Parallax2D"]
+position = Vector2(569, 317.00003)
+scale = Vector2(1.8210863, 1.3580645)
 texture = ExtResource("1_oabld")
