@@ -7,6 +7,4 @@ offset_left = 3.0
 offset_top = 1.0
 offset_right = 1152.0
 offset_bottom = 647.0
-theme_override_font_sizes/font_size = 32
-text = "Dit spel heet Mountain Hike Motoring, het doel van het spel is om zo ver 
-mogelijk met je voertuig te komen en zo punten te halen."
+text = "Dit spel heet Mountain Hike Mountaneering"
