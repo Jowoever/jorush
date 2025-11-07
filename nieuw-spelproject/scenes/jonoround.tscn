@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://b3g3qbrsdcpgu"]
 
-[ext_resource type="Texture2D" uid="uid://dv4pny5pf45cm" path="res://224fa97fe29cfa03f24c657addcaa77e.jpg" id="1_2oygd"]
+[ext_resource type="Texture2D" uid="uid://dv4pny5pf45cm" path="res://backgrounds/224fa97fe29cfa03f24c657addcaa77e.jpg" id="1_jjeqa"]
 
 [node name="Background" type="Node2D"]
 texture_filter = 1
@@ -14,4 +14,4 @@ ignore_camera_scroll = true
 [node name="BgImage" type="Sprite2D" parent="Parallax2D"]
 position = Vector2(574.5, 324.12503)
 scale = Vector2(1.8386582, 1.3887095)
-texture = ExtResource("1_2oygd")
+texture = ExtResource("1_jjeqa")

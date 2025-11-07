@@ -1,0 +1,57 @@
+[gd_scene load_steps=3 format=3 uid="uid://0kjy3uw3mi5n"]
+
+[ext_resource type="Script" uid="uid://be4m384cfxvm1" path="res://info.gd" id="1_e7ead"]
+[ext_resource type="Texture2D" uid="uid://b3h2xxisdfb3c" path="res://backgrounds/143dba5abfe2f2b7b98020331d4feb14.png" id="2_by3jj"]
+
+[node name="mainmen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Start" type="Button" parent="."]
+layout_mode = 0
+offset_left = 342.0
+offset_top = 301.0
+offset_right = 786.0
+offset_bottom = 395.0
+theme_override_font_sizes/font_size = 62
+action_mode = 0
+text = "Start"
+autowrap_mode = 2
+
+[node name="Options" type="Button" parent="."]
+layout_mode = 0
+offset_left = 342.0
+offset_top = 419.0
+offset_right = 786.0
+offset_bottom = 513.0
+theme_override_font_sizes/font_size = 62
+action_mode = 0
+text = "Options
+"
+autowrap_mode = 2
+
+[node name="Info" type="Button" parent="."]
+layout_mode = 0
+offset_left = 342.0
+offset_top = 537.0
+offset_right = 786.0
+offset_bottom = 631.0
+theme_override_font_sizes/font_size = 62
+action_mode = 0
+text = "Info
+"
+autowrap_mode = 2
+script = ExtResource("1_e7ead")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground"]
+position = Vector2(503.99997, 318.00003)
+scale = Vector2(1.8555555, 1.1805557)
+texture = ExtResource("2_by3jj")
+
+[connection signal="pressed" from="Info" to="Info" method="_on_pressed"]
