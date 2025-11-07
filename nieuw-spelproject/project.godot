@@ -11,9 +11,11 @@ config_version=5
 [application]
 
 config/name="Nieuw spelproject"
-run/main_scene="uid://b3g3qbrsdcpgu"
+run/main_scene="uid://ddtbib60xuepr"
 config/features=PackedStringArray("4.5", "C#", "GL Compatibility")
 config/icon="res://icon.svg"
+<<<<<<<Updatedupstreamrun/main_scene="uid://ddtbib60xuepr"
+<<<<<<<Updatedupstream<<<<<<<Updatedupstreamrun/main_scene="uid://ddtbib60xuepr"
 <<<<<<<Updatedupstream<<<<<<<Updatedupstream<<<<<<<Updatedupstreamrun/main_scene="uid://ddtbib60xuepr"
 
 [dotnet]
