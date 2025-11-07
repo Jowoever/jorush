@@ -11,21 +11,10 @@ config_version=5
 [application]
 
 config/name="Nieuw spelproject"
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-run/main_scene="uid://ddtbib60xuepr"
-=======
-run/main_scene="uid://bh0br4skdtjic"
->>>>>>> Stashed changes
-=======
-run/main_scene="uid://bh0br4skdtjic"
->>>>>>> Stashed changes
-=======
-run/main_scene="uid://bh0br4skdtjic"
->>>>>>> Stashed changes
+run/main_scene="uid://0kjy3uw3mi5n"
 config/features=PackedStringArray("4.5", "C#", "GL Compatibility")
 config/icon="res://icon.svg"
+<<<<<<<Updatedupstream<<<<<<<Updatedupstream<<<<<<<Updatedupstreamrun/main_scene="uid://ddtbib60xuepr"
 
 [dotnet]
 
