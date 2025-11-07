@@ -6,7 +6,7 @@
 
 [node name="Parallax2D" type="Parallax2D" parent="."]
 repeat_size = Vector2(1120, 0)
-autoscroll = Vector2(67, 0)
+autoscroll = Vector2(-67, 0)
 repeat_times = 2
 ignore_camera_scroll = true
 
