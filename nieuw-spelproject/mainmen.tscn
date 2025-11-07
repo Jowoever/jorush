@@ -1,4 +1,4 @@
-[gd_scene load_steps=0 format=3 uid="uid://0kjy3uw3mi5n"]
+[gd_scene format=3 uid="uid://0kjy3uw3mi5n"]
 
 [node name="mainmen" type="Control"]
 layout_mode = 3
@@ -8,13 +8,37 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Button" type="Button" parent="."]
+[node name="Start" type="Button" parent="."]
 layout_mode = 0
-offset_left = 694.0
-offset_top = 532.0
-offset_right = 1138.0
-offset_bottom = 622.0
+offset_left = 342.0
+offset_top = 301.0
+offset_right = 786.0
+offset_bottom = 395.0
 theme_override_font_sizes/font_size = 62
 action_mode = 0
 text = "Start"
+autowrap_mode = 2
+
+[node name="Options" type="Button" parent="."]
+layout_mode = 0
+offset_left = 342.0
+offset_top = 419.0
+offset_right = 786.0
+offset_bottom = 513.0
+theme_override_font_sizes/font_size = 62
+action_mode = 0
+text = "Options
+"
+autowrap_mode = 2
+
+[node name="Info" type="Button" parent="."]
+layout_mode = 0
+offset_left = 342.0
+offset_top = 537.0
+offset_right = 786.0
+offset_bottom = 631.0
+theme_override_font_sizes/font_size = 62
+action_mode = 0
+text = "Info
+"
 autowrap_mode = 2
