@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://ddtbib60xuepr"]
+
+[ext_resource type="Texture2D" uid="uid://dv4pny5pf45cm" path="res://224fa97fe29cfa03f24c657addcaa77e.jpg" id="1_oabld"]
+
+[node name="Main" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_oabld")
