@@ -54,4 +54,5 @@ position = Vector2(503.99997, 318.00003)
 scale = Vector2(1.8555555, 1.1805557)
 texture = ExtResource("2_by3jj")
 
+[connection signal="pressed" from="Options" to="Info" method="_on_options_pressed"]
 [connection signal="pressed" from="Info" to="Info" method="_on_pressed"]
