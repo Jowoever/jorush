@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://0kjy3uw3mi5n"]
+[gd_scene load_steps=2 format=3 uid="uid://0kjy3uw3mi5n"]
+
+[ext_resource type="Script" uid="uid://be4m384cfxvm1" path="res://info.gd" id="1_e7ead"]
 
 [node name="mainmen" type="Control"]
 layout_mode = 3
@@ -42,3 +44,6 @@ action_mode = 0
 text = "Info
 "
 autowrap_mode = 2
+script = ExtResource("1_e7ead")
+
+[connection signal="pressed" from="Info" to="Info" method="_on_pressed"]
