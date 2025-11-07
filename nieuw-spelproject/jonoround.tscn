@@ -12,6 +12,6 @@ repeat_times = 2
 ignore_camera_scroll = true
 
 [node name="BgImage" type="Sprite2D" parent="Parallax2D"]
-position = Vector2(575.5, 324.12503)
-scale = Vector2(1.8418531, 1.3887095)
+position = Vector2(574.5, 324.12503)
+scale = Vector2(1.8386582, 1.3887095)
 texture = ExtResource("1_2oygd")
