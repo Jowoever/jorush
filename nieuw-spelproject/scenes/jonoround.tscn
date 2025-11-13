@@ -17,10 +17,16 @@ position = Vector2(574.5, 324.12503)
 scale = Vector2(1.8386582, 1.3887095)
 texture = ExtResource("1_jjeqa")
 
-[node name="back" type="Button" parent="."]
+[node name="Popup" type="Popup" parent="."]
+oversampling_override = 1.0
+initial_position = 4
+size = Vector2i(400, 200)
+visible = true
+
+[node name="back" type="Button" parent="Popup"]
 offset_right = 94.0
 offset_bottom = 54.0
 text = "<--"
 script = ExtResource("2_lh4lm")
 
-[connection signal="pressed" from="back" to="back" method="_on_pressed"]
+[connection signal="pressed" from="Popup/back" to="Popup/back" method="_on_pressed"]
