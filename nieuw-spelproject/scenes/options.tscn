@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://c1kgyyx3u01sf"]
+[gd_scene load_steps=4 format=3 uid="uid://c1kgyyx3u01sf"]
 
 [ext_resource type="Script" path="res://scenes/back.gd" id="1_c2u1v"]
+[ext_resource type="Script" uid="uid://bxw0co1bmv6ka" path="res://scenes/control.gd" id="2_2iy26"]
+[ext_resource type="AudioStream" uid="uid://dyj5wwtv5kxmg" path="res://Sneaky Snitch.mp3" id="3_kv8mn"]
 
 [node name="Options" type="Node2D"]
 
@@ -11,7 +13,9 @@ offset_right = 1152.0
 offset_bottom = 647.0
 theme_override_font_sizes/font_size = 37
 text = "
-Hier komen de opties om geluid en controls aan te passen"
+
+
+						Geluid:"
 
 [node name="back" type="Button" parent="."]
 offset_right = 94.0
@@ -24,17 +28,20 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+script = ExtResource("2_2iy26")
 
 [node name="HSlider" type="HSlider" parent="Control"]
 layout_mode = 0
-offset_left = 416.0
-offset_top = 152.0
-offset_right = 870.0
-offset_bottom = 240.0
+offset_left = 493.0
+offset_top = 154.0
+offset_right = 947.0
+offset_bottom = 242.0
 min_value = -80.0
 max_value = 6.0
 step = 0.0
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Control"]
+stream = ExtResource("3_kv8mn")
 
 [connection signal="pressed" from="back" to="back" method="_on_pressed"]
+[connection signal="value_changed" from="Control/HSlider" to="Control" method="_on_h_slider_value_changed"]
