@@ -1,9 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://b3g3qbrsdcpgu"]
+[gd_scene load_steps=4 format=3 uid="uid://b3g3qbrsdcpgu"]
 
+[ext_resource type="Script" uid="uid://chgxitbso6rxe" path="res://scenes/jonoround.gd" id="1_12fxn"]
 [ext_resource type="Texture2D" uid="uid://dv4pny5pf45cm" path="res://backgrounds/224fa97fe29cfa03f24c657addcaa77e.jpg" id="1_jjeqa"]
+[ext_resource type="Script" uid="uid://doeah41rd06n" path="res://scenes/back.gd" id="2_lh4lm"]
 
 [node name="Background" type="Node2D"]
 texture_filter = 1
+script = ExtResource("1_12fxn")
 
 [node name="Parallax2D" type="Parallax2D" parent="."]
 repeat_size = Vector2(1150, 0)
@@ -15,3 +18,11 @@ ignore_camera_scroll = true
 position = Vector2(574.5, 324.12503)
 scale = Vector2(1.8386582, 1.3887095)
 texture = ExtResource("1_jjeqa")
+
+[node name="back" type="Button" parent="."]
+offset_right = 94.0
+offset_bottom = 54.0
+text = "<--"
+script = ExtResource("2_lh4lm")
+
+[connection signal="pressed" from="back" to="back" method="_on_pressed"]

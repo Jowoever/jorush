@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://buhv2f83e7flc"]
+[gd_scene load_steps=2 format=3 uid="uid://buhv2f83e7flc"]
+
+[ext_resource type="Script" uid="uid://doeah41rd06n" path="res://scenes/back.gd" id="1_6cmwp"]
 
 [node name="Info" type="Node2D"]
 
@@ -8,5 +10,14 @@ offset_top = 1.0
 offset_right = 1152.0
 offset_bottom = 647.0
 theme_override_font_sizes/font_size = 37
-text = "Dit spel heet Mountain Hike Motoring, en het doel is om zo ver 
+text = "
+Dit spel heet Mountain Hike Motoring, en het doel is om zo ver 
 mogelijk te komen met je voertuig."
+
+[node name="back" type="Button" parent="."]
+offset_right = 94.0
+offset_bottom = 54.0
+text = "<--"
+script = ExtResource("1_6cmwp")
+
+[connection signal="pressed" from="back" to="back" method="_on_pressed"]
