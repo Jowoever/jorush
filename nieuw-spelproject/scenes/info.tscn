@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 [gd_scene load_steps=2 format=3 uid="uid://buhv2f83e7flc"]
 
 [ext_resource type="Script" path="res://scenes/back.gd" id="1_6cmwp"]
+=======
+[gd_scene format=3 uid="uid://buhv2f83e7flc"]
+>>>>>>> parent of a8beead (fuctional joe branch back butt)
 
 [node name="Info" type="Node2D"]
 
@@ -10,6 +14,7 @@ offset_top = 1.0
 offset_right = 1152.0
 offset_bottom = 647.0
 theme_override_font_sizes/font_size = 37
+<<<<<<< HEAD
 text = "
 Dit spel heet Mountain Hike Motoring, en het doel is om zo ver 
 mogelijk te komen met je voertuig. Door muntjes te verzamelen
@@ -23,3 +28,7 @@ text = "<--"
 script = ExtResource("1_6cmwp")
 
 [connection signal="pressed" from="back" to="back" method="_on_pressed"]
+=======
+text = "Dit spel heet Mountain Hike Motoring, en het doel is om zo ver 
+mogelijk te komen met je voertuig."
+>>>>>>> parent of a8beead (fuctional joe branch back butt)
