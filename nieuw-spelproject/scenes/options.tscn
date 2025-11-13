@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://c1kgyyx3u01sf"]
+[gd_scene load_steps=2 format=3 uid="uid://c1kgyyx3u01sf"]
+
+[ext_resource type="Script" uid="uid://doeah41rd06n" path="res://scenes/back.gd" id="1_c2u1v"]
 
 [node name="Options" type="Node2D"]
 
@@ -8,4 +10,13 @@ offset_top = 1.0
 offset_right = 1152.0
 offset_bottom = 647.0
 theme_override_font_sizes/font_size = 37
-text = "Hier komen de opties om geluid en controls aan te passen"
+text = "
+Hier komen de opties om geluid en controls aan te passen"
+
+[node name="back" type="Button" parent="."]
+offset_right = 94.0
+offset_bottom = 54.0
+text = "<--"
+script = ExtResource("1_c2u1v")
+
+[connection signal="pressed" from="back" to="back" method="_on_pressed"]
