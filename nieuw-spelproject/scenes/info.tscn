@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://buhv2f83e7flc"]
 
-[ext_resource type="Script" uid="uid://doeah41rd06n" path="res://scenes/back.gd" id="1_6cmwp"]
+[ext_resource type="Script" path="res://scenes/back.gd" id="1_6cmwp"]
 
 [node name="Info" type="Node2D"]
 
@@ -12,7 +12,9 @@ offset_bottom = 647.0
 theme_override_font_sizes/font_size = 37
 text = "
 Dit spel heet Mountain Hike Motoring, en het doel is om zo ver 
-mogelijk te komen met je voertuig."
+mogelijk te komen met je voertuig. Door muntjes te verzamelen
+gedurende het spel kan je langzamerhand sparen voor nieuwe 
+onderdelen. Dit spel is gemaakt door Jono en Aarush"
 
 [node name="back" type="Button" parent="."]
 offset_right = 94.0
