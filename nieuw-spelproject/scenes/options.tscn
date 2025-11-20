@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://c1kgyyx3u01sf"]
+[gd_scene load_steps=3 format=3 uid="uid://c1kgyyx3u01sf"]
 
 [ext_resource type="Script" path="res://scenes/back.gd" id="1_c2u1v"]
 [ext_resource type="Script" uid="uid://bxw0co1bmv6ka" path="res://scenes/control.gd" id="2_2iy26"]
-[ext_resource type="AudioStream" uid="uid://dyj5wwtv5kxmg" path="res://Sneaky Snitch.mp3" id="3_kv8mn"]
 
 [node name="Options" type="Node2D"]
 
@@ -39,9 +38,6 @@ offset_bottom = 242.0
 min_value = -80.0
 max_value = 6.0
 step = 0.0
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Control"]
-stream = ExtResource("3_kv8mn")
 
 [connection signal="pressed" from="back" to="back" method="_on_pressed"]
 [connection signal="value_changed" from="Control/HSlider" to="Control" method="_on_h_slider_value_changed"]

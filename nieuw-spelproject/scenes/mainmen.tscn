@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://0kjy3uw3mi5n"]
+[gd_scene load_steps=4 format=3 uid="uid://0kjy3uw3mi5n"]
 
 [ext_resource type="Script" uid="uid://be4m384cfxvm1" path="res://info.gd" id="1_e7ead"]
 [ext_resource type="Texture2D" uid="uid://b3h2xxisdfb3c" path="res://backgrounds/143dba5abfe2f2b7b98020331d4feb14.png" id="2_by3jj"]
+[ext_resource type="AudioStream" uid="uid://dyj5wwtv5kxmg" path="res://Sneaky Snitch.mp3" id="3_auc25"]
 
 [node name="mainmen" type="Control"]
 layout_mode = 3
@@ -53,6 +54,12 @@ script = ExtResource("1_e7ead")
 position = Vector2(503.99997, 318.00003)
 scale = Vector2(1.8555555, 1.1805557)
 texture = ExtResource("2_by3jj")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_auc25")
+volume_db = 10.0
+pitch_scale = 2.39
+autoplay = true
 
 [connection signal="pressed" from="Start" to="Info" method="_on_start_pressed"]
 [connection signal="pressed" from="Options" to="Info" method="_on_options_pressed"]
