@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://b3g3qbrsdcpgu"]
+[gd_scene load_steps=5 format=3 uid="uid://b3g3qbrsdcpgu"]
 
 [ext_resource type="Texture2D" uid="uid://dv4pny5pf45cm" path="res://backgrounds/224fa97fe29cfa03f24c657addcaa77e.jpg" id="1_jjeqa"]
 [ext_resource type="Script" uid="uid://dn1424topx1se" path="res://scenes/popup.gd" id="2_12fxn"]
 [ext_resource type="Script" path="res://scenes/back.gd" id="2_lh4lm"]
+[ext_resource type="AudioStream" uid="uid://c6m6dg7ohgq4u" path="res://Audio/mouse-click-sound-fx.mp3" id="4_qhg23"]
 
 [node name="Background" type="Node2D"]
 texture_filter = 1
@@ -29,5 +30,10 @@ offset_right = 94.0
 offset_bottom = 54.0
 text = "<--"
 script = ExtResource("2_lh4lm")
+
+[node name="Click" type="AudioStreamPlayer" parent="Popup/back"]
+stream = ExtResource("4_qhg23")
+volume_db = 10.0
+bus = &"Music"
 
 [connection signal="pressed" from="Popup/back" to="Popup/back" method="_on_pressed"]

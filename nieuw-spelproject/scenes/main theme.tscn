@@ -4,7 +4,7 @@
 
 [node name="BgMusic" type="Node2D"]
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="BackgroundMusic" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("1_1w3ts")
 volume_db = 10.0
 autoplay = true
