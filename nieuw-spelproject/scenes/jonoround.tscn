@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://b3g3qbrsdcpgu"]
+[gd_scene load_steps=4 format=3 uid="uid://b3g3qbrsdcpgu"]
 
 [ext_resource type="Texture2D" uid="uid://dv4pny5pf45cm" path="res://backgrounds/224fa97fe29cfa03f24c657addcaa77e.jpg" id="1_jjeqa"]
-[ext_resource type="Script" uid="uid://doeah41rd06n" path="res://scenes/back.gd" id="2_lh4lm"]
+[ext_resource type="Script" uid="uid://dn1424topx1se" path="res://scenes/popup.gd" id="2_12fxn"]
+[ext_resource type="Script" path="res://scenes/back.gd" id="2_lh4lm"]
 
 [node name="Background" type="Node2D"]
 texture_filter = 1
@@ -21,7 +22,7 @@ texture = ExtResource("1_jjeqa")
 oversampling_override = 1.0
 initial_position = 4
 size = Vector2i(400, 200)
-visible = true
+script = ExtResource("2_12fxn")
 
 [node name="back" type="Button" parent="Popup"]
 offset_right = 94.0
