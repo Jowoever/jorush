@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://dac61wipu5lmf"]
+
+[ext_resource type="AudioStream" uid="uid://dyj5wwtv5kxmg" path="res://Audio/Sneaky Snitch.mp3" id="1_1w3ts"]
+
+[node name="BgMusic" type="Node2D"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_1w3ts")
+volume_db = 10.0
+autoplay = true
+bus = &"Music"
