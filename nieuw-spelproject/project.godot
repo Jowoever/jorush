@@ -18,6 +18,10 @@ config/icon="res://icon.svg"
 <<<<<<<Updatedupstream<<<<<<<Updatedupstreamrun/main_scene="uid://ddtbib60xuepr"
 <<<<<<<Updatedupstream<<<<<<<Updatedupstream<<<<<<<Updatedupstreamrun/main_scene="uid://ddtbib60xuepr"
 
+[display]
+
+window/stretch/aspect="keep_height"
+
 [dotnet]
 
 project/assembly_name="Nieuw spelproject"
