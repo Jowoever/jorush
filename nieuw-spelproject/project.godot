@@ -30,6 +30,10 @@ window/stretch/aspect="keep_height"
 
 project/assembly_name="Nieuw spelproject"
 
+[global_group]
+
+player=""
+
 [input]
 
 escape={

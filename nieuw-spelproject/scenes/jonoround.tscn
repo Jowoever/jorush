@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://b3g3qbrsdcpgu"]
+[gd_scene load_steps=6 format=3 uid="uid://b3g3qbrsdcpgu"]
 
 [ext_resource type="Texture2D" uid="uid://dv4pny5pf45cm" path="res://backgrounds/224fa97fe29cfa03f24c657addcaa77e.jpg" id="1_jjeqa"]
 [ext_resource type="Script" uid="uid://dn1424topx1se" path="res://scenes/popup.gd" id="2_12fxn"]
 [ext_resource type="Script" path="res://scenes/back.gd" id="2_lh4lm"]
 [ext_resource type="AudioStream" uid="uid://c6m6dg7ohgq4u" path="res://Audio/mouse-click-sound-fx.mp3" id="4_qhg23"]
+[ext_resource type="Texture2D" uid="uid://1r8ct5ko2ikn" path="res://Images/Car/Car.png" id="5_x2dxk"]
 
 [node name="Background" type="Node2D"]
 texture_filter = 1
@@ -35,5 +36,15 @@ script = ExtResource("2_lh4lm")
 stream = ExtResource("4_qhg23")
 volume_db = 10.0
 bus = &"Music"
+
+[node name="Player" type="RigidBody2D" parent="." groups=["players"]]
+
+[node name="Oto" type="Sprite2D" parent="Player"]
+position = Vector2(169, 415)
+scale = Vector2(0.5683594, 0.6171875)
+texture = ExtResource("5_x2dxk")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Player"]
+polygon = PackedVector2Array(54, 388, 41, 438, 47, 471, 284, 469, 283, 417, 177, 381)
 
 [connection signal="pressed" from="Popup/back" to="Popup/back" method="_on_pressed"]

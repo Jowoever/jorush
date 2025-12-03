@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://d1b7sem31b1ld"]
+
+[ext_resource type="PackedScene" uid="uid://cc0u1l8yhj5uh" path="res://scenes/wheel.tscn" id="1_g2els"]
+[ext_resource type="Texture2D" uid="uid://1r8ct5ko2ikn" path="res://Images/Car/Car.png" id="2_qhqgy"]
+
+[node name="Player" type="RigidBody2D" groups=["players"]]
+
+[node name="WheelHolder" type="PinJoint2D" parent="."]
+node_a = NodePath("..")
+node_b = NodePath("Wheel")
+
+[node name="Wheel" parent="WheelHolder" instance=ExtResource("1_g2els")]
+position = Vector2(169, 446)
+
+[node name="WheelHolder2" type="PinJoint2D" parent="."]
+node_a = NodePath("..")
+node_b = NodePath("Wheel")
+
+[node name="Wheel" parent="WheelHolder2" instance=ExtResource("1_g2els")]
+position = Vector2(537, 446)
+
+[node name="Oto" type="Sprite2D" parent="."]
+position = Vector2(382.75003, 318)
+scale = Vector2(1.4033204, 1.375)
+texture = ExtResource("2_qhqgy")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(37.42179, -615.5833)
+scale = Vector2(2.173097, 2.2361112)
+polygon = PackedVector2Array(54, 388, 30.637476, 436.73288, 29.71713, 474.2981, 295.23682, 475.6397, 295.23682, 414.81982, 177, 381)
