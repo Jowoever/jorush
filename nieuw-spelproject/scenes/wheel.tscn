@@ -3,9 +3,10 @@
 [ext_resource type="Texture2D" uid="uid://5eiimce2raf8" path="res://Images/Car/Wheel.png" id="1_hm1pg"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_c65p7"]
-radius = 64.00781
+radius = 63.0
 
 [node name="Wheel" type="RigidBody2D" groups=["players"]]
+gravity_scale = 30.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_hm1pg")
