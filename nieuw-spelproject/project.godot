@@ -46,3 +46,4 @@ escape={
 
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.08806426, 0.60814625, 0.6098732, 1)
