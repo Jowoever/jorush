@@ -1320,6 +1320,7 @@ static func sort_by_int_ascending(a: Array) -> Array:
 
 func _on_dirty_update() -> void:
 	if _dirty:
+		print("_renderer:", _renderer)
 		force_update()
 		on_dirty_update.emit()
 
@@ -1334,8 +1335,8 @@ func force_update() -> void:
 	queue_redraw()  # Debug drawing
 	_update_click_rect()
 
-	_first_update = false
-	_dirty = false
+	_first_update = true
+	_dirty = true
 
 
 ## Returns a float between 0.0 and 1.0.[br]

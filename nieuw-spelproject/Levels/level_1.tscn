@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=4 uid="uid://iwjrq4cds8ga"]
+[gd_scene load_steps=34 format=4 uid="uid://iwjrq4cds8ga"]
 
 [ext_resource type="PackedScene" uid="uid://d1b7sem31b1ld" path="res://scenes/player.tscn" id="1_n0qsc"]
 [ext_resource type="Script" uid="uid://c6kxvfqr4ewu1" path="res://addons/rmsmartshape/shapes/shape_closed.gd" id="2_syshm"]
@@ -9,8 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://gr1a1uy52vty" path="res://Images/Terrain/DirtBG.png" id="5_rfktq"]
 [ext_resource type="Script" uid="uid://llobjh5hvry" path="res://addons/rmsmartshape/shapes/mesh.gd" id="5_xoyoh"]
 [ext_resource type="Texture2D" uid="uid://cvkm2nwhfsf0p" path="res://Images/Terrain/Grass.png" id="7_62b6n"]
-[ext_resource type="Script" uid="uid://d0xjijisx1woh" path="res://addons/rmsmartshape/materials/edge_material.gd" id="9_rs4xw"]
-[ext_resource type="Script" path="res://addons/rmsmartshape/normal_range.gd" id="10_lk57d"]
+[ext_resource type="Script" uid="uid://d218yx0d1ilsn" path="res://addons/rmsmartshape/normal_range.gd" id="10_lk57d"]
 
 [sub_resource type="Resource" id="Resource_34erp"]
 script = ExtResource("3_77x7w")
@@ -58,6 +57,7 @@ script = ExtResource("3_77x7w")
 position = Vector2(-66.25714, -26.037933)
 point_in = Vector2(-1068.3584, -209.02637)
 point_out = Vector2(1068.3584, 209.02637)
+texture_idx = -5
 
 [sub_resource type="Resource" id="Resource_hsj5a"]
 script = ExtResource("3_77x7w")
@@ -164,25 +164,20 @@ script = ExtResource("5_xoyoh")
 texture = ExtResource("7_62b6n")
 mesh = SubResource("ArrayMesh_2i07x")
 
-[sub_resource type="Resource" id="Resource_yegjp"]
-script = ExtResource("9_rs4xw")
-textures = Array[Texture2D]([ExtResource("7_62b6n")])
-metadata/_custom_type_script = "uid://d0xjijisx1woh"
-
-[sub_resource type="Resource" id="Resource_d86m7"]
+[sub_resource type="Resource" id="Resource_f4pg2"]
 script = ExtResource("10_lk57d")
 distance = 360.0
 
-[sub_resource type="Resource" id="Resource_4qcx6"]
+[sub_resource type="Resource" id="Resource_uclwg"]
 script = ExtResource("4_0urlm")
-edge_material = SubResource("Resource_yegjp")
-normal_range = SubResource("Resource_d86m7")
+normal_range = SubResource("Resource_f4pg2")
 metadata/_custom_type_script = "uid://0lhxan4cqrc1"
 
-[sub_resource type="Resource" id="Resource_f4pg2"]
+[sub_resource type="Resource" id="Resource_442u8"]
 script = ExtResource("5_77x7w")
-_edge_meta_materials = Array[ExtResource("4_0urlm")]([SubResource("Resource_4qcx6")])
+_edge_meta_materials = Array[ExtResource("4_0urlm")]([SubResource("Resource_uclwg")])
 fill_textures = Array[Texture2D]([ExtResource("5_rfktq")])
+metadata/_custom_type_script = "uid://nc5bfedvnpgm"
 
 [node name="Level1" type="Node2D"]
 
@@ -204,7 +199,7 @@ position = Vector2(12, 58)
 script = ExtResource("2_syshm")
 _points = SubResource("Resource_xoyoh")
 _meshes = Array[ExtResource("5_xoyoh")]([SubResource("Resource_8x6gh"), SubResource("Resource_fxl23"), SubResource("Resource_p7b0h"), SubResource("Resource_g50tq")])
-shape_material = SubResource("Resource_f4pg2")
+shape_material = SubResource("Resource_442u8")
 collision_polygon_node_path = NodePath("../CollisionPolygon2D2")
 metadata/_custom_type_script = "uid://c6kxvfqr4ewu1"
 
