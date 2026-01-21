@@ -164,6 +164,11 @@ var tessellation_tolerence: float = 6.0 :
 #-SETTERS / GETTERS-#
 #####################
 
+func _unhandled_input(event):
+	if not is_inside_tree():
+		return
+
+
 func set_collision_polygon_node_path(value: NodePath) -> void:
 	collision_polygon_node_path = value
 	set_as_dirty()
@@ -1325,17 +1330,22 @@ func _on_dirty_update() -> void:
 
 
 func force_update() -> void:
-	bake_collision()  # TODO: Get rid of CollisionUpdateMode and use _first_update as well.
+	# Renderer may not exist yet (scene just entered tree)
+	if _renderer == null:
+		return
+
+	bake_collision()
 
 	if not _first_update or not _meshes:
 		_build_meshes()
 
 	_renderer.render(_meshes)
-	queue_redraw()  # Debug drawing
+	queue_redraw()
 	_update_click_rect()
 
 	_first_update = false
 	_dirty = false
+
 
 
 ## Returns a float between 0.0 and 1.0.[br]
