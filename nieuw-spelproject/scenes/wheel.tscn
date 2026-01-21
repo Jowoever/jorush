@@ -9,7 +9,9 @@ radius = 63.0
 gravity_scale = 30.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(1.478182, 1.478182, 1.478182, 1)
 texture = ExtResource("1_hm1pg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 shape = SubResource("CircleShape2D_c65p7")
