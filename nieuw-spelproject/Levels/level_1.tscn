@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=4 uid="uid://iwjrq4cds8ga"]
+[gd_scene load_steps=44 format=4 uid="uid://iwjrq4cds8ga"]
 
 [ext_resource type="PackedScene" uid="uid://blty8xgiggjry" path="res://scenes/player.tscn" id="1_n0qsc"]
 [ext_resource type="Script" uid="uid://c6kxvfqr4ewu1" path="res://addons/rmsmartshape/shapes/shape_closed.gd" id="2_syshm"]
@@ -8,12 +8,13 @@
 [ext_resource type="Script" uid="uid://nc5bfedvnpgm" path="res://addons/rmsmartshape/materials/shape_material.gd" id="5_77x7w"]
 [ext_resource type="Texture2D" uid="uid://gr1a1uy52vty" path="res://Images/Terrain/DirtBG.png" id="5_rfktq"]
 [ext_resource type="Script" uid="uid://llobjh5hvry" path="res://addons/rmsmartshape/shapes/mesh.gd" id="5_xoyoh"]
-[ext_resource type="Script" uid="uid://d218yx0d1ilsn" path="res://addons/rmsmartshape/normal_range.gd" id="10_lk57d"]
+[ext_resource type="Script" path="res://addons/rmsmartshape/normal_range.gd" id="10_lk57d"]
 [ext_resource type="Script" uid="uid://dn1424topx1se" path="res://scenes/popup.gd" id="11_34erp"]
-[ext_resource type="Script" uid="uid://doeah41rd06n" path="res://scenes/back.gd" id="12_k2bse"]
+[ext_resource type="Script" path="res://scenes/back.gd" id="12_k2bse"]
 [ext_resource type="AudioStream" uid="uid://c6m6dg7ohgq4u" path="res://Audio/mouse-click-sound-fx.mp3" id="13_c7pbv"]
 [ext_resource type="Script" uid="uid://ckuo550kbn88f" path="res://Levels/close.gd" id="13_lk57d"]
 [ext_resource type="AudioStream" uid="uid://bxhaec2s564vb" path="res://Audio/SpotiDownloader.com - EXPRESSWAY - AQUASINE.mp3" id="14_2hkqn"]
+[ext_resource type="Texture2D" uid="uid://ctruelgccu1s8" path="res://Images/Characters/mooouh-removebg-preview.png" id="15_34erp"]
 
 [sub_resource type="Resource" id="Resource_34erp"]
 script = ExtResource("3_77x7w")
@@ -273,6 +274,10 @@ stream = ExtResource("14_2hkqn")
 volume_db = 10.0
 autoplay = true
 bus = &"Music"
+
+[node name="MooouhRemovebgPreview" type="Sprite2D" parent="."]
+position = Vector2(6813, 2504)
+texture = ExtResource("15_34erp")
 
 [connection signal="pressed" from="Popup/back" to="Popup/back" method="_on_pressed"]
 [connection signal="pressed" from="Popup/close" to="Popup/close" method="_on_pressed"]
