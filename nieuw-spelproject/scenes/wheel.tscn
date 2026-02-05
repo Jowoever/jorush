@@ -10,6 +10,8 @@ gravity_scale = 30.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 modulate = Color(1.478182, 1.478182, 1.478182, 1)
+position = Vector2(-0.99999905, -0.9999995)
+scale = Vector2(1.5000001, 1.3984375)
 texture = ExtResource("1_hm1pg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
