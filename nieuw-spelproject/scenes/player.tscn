@@ -28,7 +28,7 @@ softness = 0.55
 
 [node name="Wheel" parent="WheelHolder2" instance=ExtResource("3_dqkch")]
 mass = 5.862
-gravity_scale = 1.153
+gravity_scale = 5.153
 
 [node name="Oto" type="Sprite2D" parent="."]
 position = Vector2(-1, -3)
