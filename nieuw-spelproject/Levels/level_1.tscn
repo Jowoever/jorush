@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=4 uid="uid://iwjrq4cds8ga"]
+[gd_scene load_steps=40 format=4 uid="uid://iwjrq4cds8ga"]
 
 [ext_resource type="PackedScene" uid="uid://blty8xgiggjry" path="res://scenes/player.tscn" id="1_n0qsc"]
 [ext_resource type="Script" uid="uid://c6kxvfqr4ewu1" path="res://addons/rmsmartshape/shapes/shape_closed.gd" id="2_syshm"]
@@ -8,11 +8,12 @@
 [ext_resource type="Script" uid="uid://nc5bfedvnpgm" path="res://addons/rmsmartshape/materials/shape_material.gd" id="5_77x7w"]
 [ext_resource type="Texture2D" uid="uid://gr1a1uy52vty" path="res://Images/Terrain/DirtBG.png" id="5_rfktq"]
 [ext_resource type="Script" uid="uid://llobjh5hvry" path="res://addons/rmsmartshape/shapes/mesh.gd" id="5_xoyoh"]
-[ext_resource type="Script" uid="uid://d218yx0d1ilsn" path="res://addons/rmsmartshape/normal_range.gd" id="10_lk57d"]
+[ext_resource type="Script" path="res://addons/rmsmartshape/normal_range.gd" id="10_lk57d"]
 [ext_resource type="Script" uid="uid://dn1424topx1se" path="res://scenes/popup.gd" id="11_34erp"]
-[ext_resource type="Script" uid="uid://doeah41rd06n" path="res://scenes/back.gd" id="12_k2bse"]
+[ext_resource type="Script" path="res://scenes/back.gd" id="12_k2bse"]
 [ext_resource type="AudioStream" uid="uid://c6m6dg7ohgq4u" path="res://Audio/mouse-click-sound-fx.mp3" id="13_c7pbv"]
 [ext_resource type="Script" uid="uid://ckuo550kbn88f" path="res://Levels/close.gd" id="13_lk57d"]
+[ext_resource type="AudioStream" uid="uid://bxhaec2s564vb" path="res://Audio/SpotiDownloader.com - EXPRESSWAY - AQUASINE.mp3" id="14_2hkqn"]
 
 [sub_resource type="Resource" id="Resource_34erp"]
 script = ExtResource("3_77x7w")
@@ -213,6 +214,7 @@ collision_polygon_node_path = NodePath("../CollisionPolygon2D")
 metadata/_custom_type_script = "uid://c6kxvfqr4ewu1"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+visible = false
 polygon = PackedVector2Array(-7117.5273, 81.98633, -7156.05, -276.96075, -7144.994, -1065.7734, -7061.5215, -1486.3657, -6989.912, -1679.5814, -6894.4297, -1852.4087, -6772.1074, -1998.0972, -6619.9775, -2109.8965, -6435.0723, -2181.0554, -6214.4233, -2204.8237, -6162.4067, -986.0408, -6196.9844, -699.35034, -6219.489, -617.43933, -6241.6865, -569.15454, -6260.741, -548.9986, -6273.8145, -551.47394, -6278.0693, -571.0831, -6270.6685, -602.32874, -6248.775, -639.7134, -6209.551, -677.7395, -6150.159, -710.9097, -6067.761, -733.72656, -5854.2334, -743.5976, -5594.036, -716.27747, -3137.0884, -300.35986, -105.25714, 173.96207, 2348.7317, 921.232, 3818.8289, 1206.2949, 4499.3027, 1205.9712, 4811.4775, 1155.0066, 5099.451, 1064.4253, 5720.105, 807.8531, 6199.4824, 671.6353, 7248.351, 548.31226, 7621.0156, 456.71588, 8081.6, 267.07574, 8675.942, -64.28784, 8869.735, -75.365326, 9123.581, -60.184418, 9771.386, 34.85428, 13376.595, 935.7163, 12171.794, 1193.0112, 11737.405, 1349.0056, 11369.686, 1535.93, 11230.326, 1588.7155, 11112.798, 1618.8386, 11011.224, 1629.6414, 10919.729, 1624.4655, 10743.467, 1579.5455, 10253.319, 1445.0027, 9845.409, 1408.8491, 9266.259, 1429.0867, 8918.293, 1341.5566, 8602.745, 1303.136, 8320.504, 1308.4645, 8072.457, 1352.182, 7859.4927, 1428.9285, 7682.4966, 1533.3434, 7542.3574, 1660.0669, 7439.9624, 1803.739, 7376.199, 1958.999, 7351.9556, 2120.4873, 7368.119, 2282.8435, 7425.5767, 2440.7075, 7525.217, 2588.7192, 7667.927, 2721.5186, 7854.5938, 2833.7449, 8086.1055, 2920.0386, 8903.601, 3178.1921, 9221.044, 3211.7246, 9370.124, 3203.8127, 9517.798, 3179.1462, 9823.994, 3078.6445, 10169.767, 2908.4092, 11100.579, 2351.4905, 11401.823, 2137.5498, 11786.918, 1926.3477, 12758.562, 1518.1814, 15156.977, 800.94775, 18968.81, 100.05908, 19694.803, 49.08513, 20017.97, -15.65387, 20312.535, -113.85559, 20576.953, -250.99112, 20809.684, -432.5315, 21009.186, -663.9479, 21173.92, -950.7112, 21210.293, -1018.11316, 21271.96, -1051.1359, 21355.525, -1053.2832, 21457.582, -1028.0591, 21703.56, -909.5116, 21982.658, -723.5236, 22531.299, -261.34824, 22885.66, 134.22314, 23610.04, 564.073, 24259.611, 828.51044, 24839.64, 958.61707, 25355.402, 985.4735, 25812.168, 940.16095, 26881.195, 682.0205, 27630.62, 628.81323, 56805.637, 4805.1685, -7135.672, 4326.677)
 
 [node name="Popup" type="Popup" parent="."]
@@ -246,6 +248,12 @@ volume_db = 10.0
 bus = &"Music"
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="BackgroundMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("14_2hkqn")
+volume_db = 10.0
+autoplay = true
+bus = &"Music"
 
 [connection signal="pressed" from="Popup/back" to="Popup/back" method="_on_pressed"]
 [connection signal="pressed" from="Popup/close" to="Popup/close" method="_on_pressed"]
