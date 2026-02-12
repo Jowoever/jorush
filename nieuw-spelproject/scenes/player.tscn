@@ -6,8 +6,11 @@
 [ext_resource type="PackedScene" uid="uid://dvy7fvgvuqn1i" path="res://scenes/wheeldosomethingaboutit.tscn" id="3_dqkch"]
 
 [node name="Player" type="RigidBody2D" groups=["player", "players"]]
+position = Vector2(110, -93)
 mass = 2.27
 gravity_scale = 1.492
+center_of_mass_mode = 1
+center_of_mass = Vector2(-41.49, 145.23)
 script = ExtResource("1_qhqgy")
 
 [node name="WheelHolder" type="PinJoint2D" parent="."]
