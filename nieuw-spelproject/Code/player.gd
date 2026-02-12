@@ -12,12 +12,12 @@ func _physics_process(delta):
 	if Input.is_action_pressed("ui_right"):
 		for wheel in wheels:
 			if wheel.angular_velocity < max_speed:
-				wheel.apply_torque_impulse(speed * delta * 25)
+				wheel.apply_torque_impulse(speed * delta * 37)
 		 
 			
 	if Input.is_action_pressed("ui_left"):
 		for wheel in wheels:
 			if wheel.angular_velocity > -max_speed:
-				wheel.apply_torque_impulse(-speed * delta * 25)
+				wheel.apply_torque_impulse(-speed * delta * 37)
 				
 	
