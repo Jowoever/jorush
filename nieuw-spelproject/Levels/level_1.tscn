@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=4 uid="uid://iwjrq4cds8ga"]
+[gd_scene load_steps=58 format=4 uid="uid://iwjrq4cds8ga"]
 
 [ext_resource type="Script" uid="uid://bsdlbqlwv1deb" path="res://Levels/level_1.gd" id="1_k2bse"]
 [ext_resource type="PackedScene" uid="uid://blty8xgiggjry" path="res://scenes/player.tscn" id="1_n0qsc"]
@@ -11,14 +11,15 @@
 [ext_resource type="Script" uid="uid://llobjh5hvry" path="res://addons/rmsmartshape/shapes/mesh.gd" id="5_xoyoh"]
 [ext_resource type="Texture2D" uid="uid://cvkm2nwhfsf0p" path="res://Images/Terrain/Grass.png" id="8_1rr3k"]
 [ext_resource type="Script" uid="uid://d0xjijisx1woh" path="res://addons/rmsmartshape/materials/edge_material.gd" id="10_hsj5a"]
-[ext_resource type="Script" uid="uid://d218yx0d1ilsn" path="res://addons/rmsmartshape/normal_range.gd" id="10_lk57d"]
+[ext_resource type="Script" path="res://addons/rmsmartshape/normal_range.gd" id="10_lk57d"]
 [ext_resource type="Script" uid="uid://dn1424topx1se" path="res://scenes/popup.gd" id="11_34erp"]
-[ext_resource type="Script" uid="uid://doeah41rd06n" path="res://scenes/back.gd" id="12_k2bse"]
+[ext_resource type="Script" path="res://scenes/back.gd" id="12_k2bse"]
 [ext_resource type="AudioStream" uid="uid://c6m6dg7ohgq4u" path="res://Audio/mouse-click-sound-fx.mp3" id="13_c7pbv"]
 [ext_resource type="Script" uid="uid://ckuo550kbn88f" path="res://Levels/close.gd" id="13_lk57d"]
 [ext_resource type="AudioStream" uid="uid://bxhaec2s564vb" path="res://Audio/SpotiDownloader.com - EXPRESSWAY - AQUASINE.mp3" id="14_2hkqn"]
 [ext_resource type="Texture2D" uid="uid://ctruelgccu1s8" path="res://Images/Characters/mooouh-removebg-preview.png" id="15_34erp"]
 [ext_resource type="PackedScene" uid="uid://d0u7i4qtnalle" path="res://scenes/coin.tscn" id="17_c7pbv"]
+[ext_resource type="PackedScene" uid="uid://cnet1replw8ku" path="res://scenes/finishflag.tscn" id="20_hsj5a"]
 
 [sub_resource type="Resource" id="Resource_34erp"]
 script = ExtResource("3_77x7w")
@@ -318,6 +319,7 @@ collision_polygon_node_path = NodePath("../CollisionPolygon2D")
 metadata/_custom_type_script = "uid://c6kxvfqr4ewu1"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+visible = false
 polygon = PackedVector2Array(-7117.5273, 81.98633, -7156.05, -276.96075, -7144.994, -1065.7734, -7061.5215, -1486.3657, -6989.912, -1679.5814, -6894.4297, -1852.4087, -6772.1074, -1998.0972, -6619.9775, -2109.8965, -6435.0723, -2181.0554, -6214.4233, -2204.8237, -6162.4067, -986.0408, -6196.9844, -699.35034, -6219.489, -617.43933, -6241.6865, -569.15454, -6260.741, -548.9986, -6273.8145, -551.47394, -6278.0693, -571.0831, -6270.6685, -602.32874, -6248.775, -639.7134, -6209.551, -677.7395, -6150.159, -710.9097, -6067.761, -733.72656, -5854.2334, -743.5976, -5594.036, -716.27747, -3137.0884, -300.35986, -105.25714, 173.96207, 2348.7317, 921.232, 3818.8289, 1206.2949, 4499.3027, 1205.9712, 4811.4775, 1155.0066, 5099.451, 1064.4253, 5720.105, 807.8531, 6199.4824, 671.6353, 7248.351, 548.31226, 7621.0156, 456.71588, 8081.6, 267.07574, 8675.942, -64.28784, 8869.735, -75.365326, 9123.581, -60.184418, 9771.386, 34.85428, 13376.595, 935.7163, 12171.794, 1193.0112, 11737.405, 1349.0056, 9547.928, 2479.4622, 8113.706, 2656.8445, 7949.08, 2663.4292, 7915.295, 2657.662, 7921.0723, 2644.6829, 8178.463, 2617.8423, 8234.994, 2596.9832, 8261.554, 2582.1675, 8286.846, 2563.8792, 8310.775, 2541.7063, 8333.244, 2515.2373, 8373.412, 2447.7651, 8354.577, 2285.9946, 8316.797, 2154.4453, 8262.854, 2050.387, 8195.53, 1971.0898, 8117.6064, 1913.8241, 8031.865, 1875.8599, 7941.0884, 1854.467, 7848.0566, 1846.9163, 7666.357, 1862.4204, 7509.0195, 1900.5334, 7356.4453, 1957.2305, 7248.643, 2085.3228, 7171.417, 2221.747, 7143.7524, 2301.1436, 7129.778, 2385.3643, 7134.287, 2472.4348, 7162.0747, 2560.3809, 7217.9346, 2647.2278, 7306.661, 2731.002, 7433.047, 2809.7285, 7601.8877, 2881.4336, 8086.1055, 2995.8818, 9550.595, 2957.218, 9847.054, 2919.935, 10182.065, 2822.816, 11100.579, 2351.4905, 11401.823, 2137.5498, 11786.918, 1926.3477, 12758.562, 1518.1814, 15156.977, 800.94775, 18968.81, 100.05908, 19694.803, 49.08513, 20017.97, -15.65387, 20312.535, -113.85559, 20576.953, -250.99112, 20809.684, -432.5315, 21009.186, -663.9479, 21173.92, -950.7112, 21210.293, -1018.11316, 21271.96, -1051.1359, 21355.525, -1053.2832, 21457.582, -1028.0591, 21703.56, -909.5116, 21982.658, -723.5236, 22531.299, -261.34824, 22885.66, 134.22314, 23610.04, 564.073, 24259.611, 828.51044, 24839.64, 958.61707, 25355.402, 985.4735, 25812.168, 940.16095, 26881.195, 682.0205, 27321.764, 651.3246, 27705.463, 771.94525, 28036.22, 1023.27655, 28317.959, 1384.7131, 28554.607, 1835.6489, 28750.084, 2355.4783, 29033.23, 3519.395, 29304.027, 6809.66, -7135.672, 4326.677)
 
 [node name="Popup" type="Popup" parent="."]
@@ -365,5 +367,9 @@ texture = ExtResource("15_34erp")
 [node name="Area2D" parent="." instance=ExtResource("17_c7pbv")]
 position = Vector2(555, 216)
 
+[node name="finishflag" parent="." instance=ExtResource("20_hsj5a")]
+position = Vector2(27187, 368)
+
 [connection signal="pressed" from="Popup/back" to="Popup/back" method="_on_pressed"]
 [connection signal="pressed" from="Popup/close" to="Popup/close" method="_on_pressed"]
+[connection signal="body_entered" from="finishflag" to="." method="_on_body_entered"]

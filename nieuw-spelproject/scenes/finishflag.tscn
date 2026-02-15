@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cnet1replw8ku"]
+
+[ext_resource type="Script" uid="uid://c0lf1g6vshktu" path="res://Levels/finishflag.gd" id="1_0m3wu"]
+[ext_resource type="Texture2D" uid="uid://bke1hf572xmri" path="res://Images/Terrain/finishflag.png" id="2_omjfq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_t50la"]
+radius = 491.43332
+
+[node name="finishflag" type="Area2D"]
+script = ExtResource("1_0m3wu")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_omjfq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource("CircleShape2D_t50la")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
