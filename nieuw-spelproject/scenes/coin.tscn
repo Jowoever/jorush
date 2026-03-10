@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://d0u7i4qtnalle"]
 
 [ext_resource type="Script" uid="uid://tsb2rhrsffi6" path="res://Code/coin.gd" id="1_i64fm"]
-[ext_resource type="Texture2D" uid="uid://bce5h8w2ddnut" path="res://Images/Pickups/Coin10.png" id="1_rwqht"]
+[ext_resource type="Texture2D" uid="uid://ckwtugas81phy" path="res://Images/Pickups/Coin5.png" id="2_11l1o"]
 [ext_resource type="AudioStream" uid="uid://bf1ybvxqmq4tc" path="res://Audio/Coin.wav" id="3_11l1o"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_i64fm"]
@@ -98,14 +98,14 @@ _data = {
 &"pickup": SubResource("Animation_i64fm")
 }
 
-[sub_resource type="AudioStreamPolyphonic" id="AudioStreamPolyphonic_11l1o"]
+[sub_resource type="AudioStreamPolyphonic" id="AudioStreamPolyphonic_d14el"]
 
 [node name="Area2D" type="Area2D"]
 script = ExtResource("1_i64fm")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 modulate = Color(1.269618, 1.269618, 1.269618, 1.27)
-texture = ExtResource("1_rwqht")
+texture = ExtResource("2_11l1o")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
@@ -117,6 +117,6 @@ libraries = {
 }
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = SubResource("AudioStreamPolyphonic_11l1o")
+stream = SubResource("AudioStreamPolyphonic_d14el")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
