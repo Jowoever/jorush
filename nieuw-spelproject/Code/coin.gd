@@ -1,18 +1,32 @@
 extends Area2D
 
-@export var value = 10
-# Called when the node enters the scene tree for the first time.
+@export var value: int = 5
+var picked_up = false
+
 func _ready() -> void:
-	pass # Replace with function body.
+	# Connect signals
+	body_entered.connect(_on_body_entered)
+	$AnimationPlayer.animation_finished.connect(_on_animation_finished)
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-
-
-func _on_coin_body_entered(body: Node2D) -> void:
-	if body.is_in_group("player"):
-		get_tree().get_current_scene().add_coins(value)
+func _on_body_entered(body: Node2D) -> void:
+	if body.is_in_group("player") and not picked_up:
+		picked_up = true
 		
-	
+		# Add coins to main scene
+		var main_scene = get_tree().current_scene
+		if main_scene and main_scene.has_method("add_coins"):
+			main_scene.add_coins(value)
+		
+		# Play sound
+		if $AudioStreamPlayer and $AudioStreamPlayer.stream:
+			$AudioStreamPlayer.play()
+		
+		# Disable collision
+		$CollisionShape2D.set_deferred("disabled", true)
+		
+		# Play animation
+		$AnimationPlayer.play("pickup")
+
+func _on_animation_finished(anim_name: String) -> void:
+	if anim_name == "pickup":
+		queue_free()
