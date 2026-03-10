@@ -4,6 +4,8 @@ var wheels = []
 var speed = 60000
 var max_speed = 100
 
+var fuel = 100
+
 func _ready():
 	wheels = get_tree().get_nodes_in_group("wheel")
 	
@@ -21,3 +23,5 @@ func _physics_process(delta):
 				wheel.apply_torque_impulse(-speed * delta * 37)
 				
 	
+func refuel():
+	fuel = 100

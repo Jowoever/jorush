@@ -16,7 +16,7 @@ ss2d/version="3.3.0"
 
 config/name="Mountain Hike Motoring"
 run/main_scene="uid://0kjy3uw3mi5n"
-config/features=PackedStringArray("4.5", "GL Compatibility")
+config/features=PackedStringArray("4.5", "C#", "GL Compatibility")
 config/icon="res://icon.svg"
 <<<<<<<Updatedupstreamrun/main_scene="uid://ddtbib60xuepr"
 <<<<<<<Updatedupstream<<<<<<<Updatedupstreamrun/main_scene="uid://ddtbib60xuepr"
