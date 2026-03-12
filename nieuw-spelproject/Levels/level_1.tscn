@@ -419,7 +419,7 @@ metadata/_custom_type_script = "uid://nc5bfedvnpgm"
 script = ExtResource("1_k2bse")
 
 [node name="Player" parent="." instance=ExtResource("1_n0qsc")]
-position = Vector2(73215, 7710)
+position = Vector2(-5775, -2010)
 mass = 8.175
 gravity_scale = 4.452
 
@@ -693,9 +693,6 @@ position = Vector2(15468, 576)
 [node name="Area2D48" parent="." instance=ExtResource("17_c7pbv")]
 position = Vector2(15705, 538)
 
-[node name="Area2D49" parent="." instance=ExtResource("17_c7pbv")]
-position = Vector2(21243, -1792)
-
 [node name="Area2D50" parent="." instance=ExtResource("17_c7pbv")]
 position = Vector2(21234, -1595)
 
@@ -717,9 +714,6 @@ position = Vector2(21457, -1369)
 [node name="Area2D56" parent="." instance=ExtResource("17_c7pbv")]
 position = Vector2(21445, -1171)
 
-[node name="Area2D57" parent="." instance=ExtResource("17_c7pbv")]
-position = Vector2(21674, -1780)
-
 [node name="Area2D58" parent="." instance=ExtResource("17_c7pbv")]
 position = Vector2(21664, -1570)
 
@@ -728,9 +722,6 @@ position = Vector2(21668, -1347)
 
 [node name="Area2D60" parent="." instance=ExtResource("17_c7pbv")]
 position = Vector2(21655, -1121)
-
-[node name="Area2D61" parent="." instance=ExtResource("17_c7pbv")]
-position = Vector2(21860, -1552)
 
 [node name="Area2D62" parent="." instance=ExtResource("17_c7pbv")]
 position = Vector2(21874, -1350)
@@ -962,6 +953,54 @@ position = Vector2(50460, -839)
 
 [node name="Node2D" parent="." instance=ExtResource("22_8x6gh")]
 position = Vector2(76795, 9287)
+
+[node name="Area2D78" parent="." instance=ExtResource("17_c7pbv")]
+position = Vector2(26999, 541)
+
+[node name="Area2D139" parent="." instance=ExtResource("17_c7pbv")]
+position = Vector2(27188, 534)
+
+[node name="Area2D140" parent="." instance=ExtResource("17_c7pbv")]
+position = Vector2(27362, 531)
+
+[node name="Area2D141" parent="." instance=ExtResource("17_c7pbv")]
+position = Vector2(27570, 545)
+
+[node name="Area2D142" parent="." instance=ExtResource("17_c7pbv")]
+position = Vector2(54603, 6319)
+
+[node name="Area2D143" parent="." instance=ExtResource("17_c7pbv")]
+position = Vector2(54703, 6485)
+
+[node name="Area2D144" parent="." instance=ExtResource("17_c7pbv")]
+position = Vector2(54842, 6608)
+
+[node name="Area2D145" parent="." instance=ExtResource("17_c7pbv")]
+position = Vector2(62025, 5492)
+
+[node name="Area2D146" parent="." instance=ExtResource("17_c7pbv")]
+position = Vector2(62232, 5411)
+
+[node name="Area2D147" parent="." instance=ExtResource("17_c7pbv")]
+position = Vector2(62484, 5322)
+
+[node name="Area2D148" parent="." instance=ExtResource("17_c7pbv")]
+position = Vector2(65067, 4619)
+
+[node name="Area2D149" parent="." instance=ExtResource("17_c7pbv")]
+position = Vector2(65296, 4612)
+
+[node name="Area2D150" parent="." instance=ExtResource("17_c7pbv")]
+position = Vector2(65496, 4641)
+
+[node name="Area2D151" parent="." instance=ExtResource("17_c7pbv")]
+position = Vector2(69707, 7224)
+
+[node name="Area2D152" parent="." instance=ExtResource("17_c7pbv")]
+position = Vector2(69882, 7379)
+
+[node name="Area2D153" parent="." instance=ExtResource("17_c7pbv")]
+position = Vector2(70023, 7520)
 
 [connection signal="pressed" from="Popup/back" to="Popup/back" method="_on_pressed"]
 [connection signal="pressed" from="Popup/close" to="Popup/close" method="_on_pressed"]
