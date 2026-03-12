@@ -11,17 +11,25 @@ func _ready():
 	
 	
 func _physics_process(delta):
-	if Input.is_action_pressed("ui_right"):
-		for wheel in wheels:
-			if wheel.angular_velocity < max_speed:
-				wheel.apply_torque_impulse(speed * delta * 37)
-		 
-			
-	if Input.is_action_pressed("ui_left"):
-		for wheel in wheels:
-			if wheel.angular_velocity > -max_speed:
-				wheel.apply_torque_impulse(-speed * delta * 37)
+	if fuel > 0:
+		if Input.is_action_pressed("ui_right"):
+			use_fuel(delta)
+			for wheel in wheels:
+				if wheel.angular_velocity < max_speed:
+					wheel.apply_torque_impulse(speed * delta * 50)
+			 
 				
+		if Input.is_action_pressed("ui_left"):
+			use_fuel(delta)
+			for wheel in wheels:
+				if wheel.angular_velocity > -max_speed:
+					wheel.apply_torque_impulse(-speed * delta * 50)
+				
+	print(fuel)
 	
 func refuel():
 	fuel = 100
+	
+func use_fuel(delta):
+		fuel-= 10 * delta
+		fuel = clamp(fuel, 0, 100)

@@ -1,12 +1,14 @@
-[gd_scene load_steps=11 format=3 uid="uid://d0u7i4qtnalle"]
+[gd_scene load_steps=11 format=3 uid="uid://c6qf213uv40jl"]
 
-[ext_resource type="Script" uid="uid://tsb2rhrsffi6" path="res://Code/coin.gd" id="1_i64fm"]
-[ext_resource type="Texture2D" uid="uid://ckwtugas81phy" path="res://Images/Pickups/Coin5.png" id="2_11l1o"]
-[ext_resource type="AudioStream" uid="uid://bf1ybvxqmq4tc" path="res://Audio/Coin.wav" id="3_11l1o"]
-[ext_resource type="AudioStream" uid="uid://bn002vcyki7bq" path="res://Audio/Fuel.wav" id="3_d14el"]
+[ext_resource type="Script" uid="uid://q2n6thjcsymk" path="res://scenes/iranianoil.gd" id="1_ncc61"]
+[ext_resource type="Texture2D" uid="uid://bxve4f58tk030" path="res://Images/Pickups/Fuel.png" id="2_bmp1k"]
+[ext_resource type="AudioStream" uid="uid://bf1ybvxqmq4tc" path="res://Audio/Coin.wav" id="3_8t52v"]
+[ext_resource type="AudioStream" uid="uid://bn002vcyki7bq" path="res://Audio/Fuel.wav" id="3_ncc61"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_i64fm"]
-radius = 80.80842
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ncc61"]
+size = Vector2(151, 155)
+
+[sub_resource type="AudioStreamPolyphonic" id="AudioStreamPolyphonic_ncc61"]
 
 [sub_resource type="Animation" id="Animation_1anmq"]
 length = 0.7
@@ -42,7 +44,7 @@ tracks/2/keys = {
 "clips": [{
 "end_offset": 0.0,
 "start_offset": 0.0,
-"stream": ExtResource("3_d14el")
+"stream": ExtResource("3_ncc61")
 }],
 "times": PackedFloat32Array(0)
 }
@@ -87,7 +89,7 @@ tracks/2/keys = {
 "clips": [{
 "end_offset": 0.0,
 "start_offset": 0.0,
-"stream": ExtResource("3_11l1o")
+"stream": ExtResource("3_8t52v")
 }],
 "times": PackedFloat32Array(0.03333333)
 }
@@ -105,7 +107,7 @@ tracks/0/keys = {
 "clips": [{
 "end_offset": 0.0,
 "start_offset": 0.0,
-"stream": ExtResource("3_d14el")
+"stream": ExtResource("3_ncc61")
 }],
 "times": PackedFloat32Array(0)
 }
@@ -142,25 +144,24 @@ _data = {
 &"refuel": SubResource("Animation_8t52v")
 }
 
-[sub_resource type="AudioStreamPolyphonic" id="AudioStreamPolyphonic_d14el"]
-
 [node name="Area2D" type="Area2D"]
-script = ExtResource("1_i64fm")
+script = ExtResource("1_ncc61")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 modulate = Color(1.269618, 1.269618, 1.269618, 1.27)
-texture = ExtResource("2_11l1o")
+texture = ExtResource("2_bmp1k")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
-shape = SubResource("CircleShape2D_i64fm")
+position = Vector2(2.5, -2.5)
+shape = SubResource("RectangleShape2D_ncc61")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamPolyphonic_ncc61")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 &"": SubResource("AnimationLibrary_mtka6")
 }
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = SubResource("AudioStreamPolyphonic_d14el")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

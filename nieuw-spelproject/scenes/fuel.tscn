@@ -100,7 +100,7 @@ _data = {
 &"pickup": SubResource("Animation_i64fm")
 }
 
-[node name="Area2D" type="Area2D"]
+[node name="Area2D2" type="Area2D"]
 script = ExtResource("1_vltxq")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

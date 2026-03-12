@@ -1,14 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://6ysqywp4u3k3"]
+[gd_scene load_steps=3 format=3 uid="uid://6ysqywp4u3k3"]
 
 [ext_resource type="Texture2D" uid="uid://ckwtugas81phy" path="res://Images/Pickups/Coin5.png" id="1_fyqef"]
+[ext_resource type="Texture2D" uid="uid://bxve4f58tk030" path="res://Images/Pickups/Fuel.png" id="2_cvphd"]
 
 [node name="ui" type="CanvasLayer"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 7.0
-offset_top = 1.0
-offset_right = 102.0
-offset_bottom = 96.0
+offset_left = 6.0
+offset_top = 118.0
+offset_right = 101.0
+offset_bottom = 213.0
 texture = ExtResource("1_fyqef")
 expand_mode = 1
 
@@ -21,3 +22,20 @@ offset_bottom = 107.0
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 64
 text = "o"
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+offset_left = 9.0
+offset_top = 15.0
+offset_right = 194.67
+offset_bottom = 215.0
+scale = Vector2(0.46, 0.46)
+texture = ExtResource("2_cvphd")
+expand_mode = 1
+
+[node name="ProgressBar" type="ProgressBar" parent="TextureRect2"]
+layout_mode = 0
+offset_left = 184.78261
+offset_top = 69.565216
+offset_right = 684.7826
+offset_bottom = 169.56522
+scale = Vector2(1.295, 0.865)

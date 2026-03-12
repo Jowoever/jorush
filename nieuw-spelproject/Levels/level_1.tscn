@@ -1,4 +1,4 @@
-[gd_scene load_steps=59 format=4 uid="uid://iwjrq4cds8ga"]
+[gd_scene load_steps=60 format=4 uid="uid://iwjrq4cds8ga"]
 
 [ext_resource type="Script" uid="uid://bsdlbqlwv1deb" path="res://Levels/level_1.gd" id="1_k2bse"]
 [ext_resource type="PackedScene" uid="uid://blty8xgiggjry" path="res://scenes/player.tscn" id="1_n0qsc"]
@@ -19,8 +19,9 @@
 [ext_resource type="AudioStream" uid="uid://bxhaec2s564vb" path="res://Audio/SpotiDownloader.com - EXPRESSWAY - AQUASINE.mp3" id="14_2hkqn"]
 [ext_resource type="Texture2D" uid="uid://ctruelgccu1s8" path="res://Images/Characters/mooouh-removebg-preview.png" id="15_34erp"]
 [ext_resource type="PackedScene" uid="uid://d0u7i4qtnalle" path="res://scenes/coin.tscn" id="17_c7pbv"]
-[ext_resource type="PackedScene" path="res://scenes/finishflag.tscn" id="20_hsj5a"]
+[ext_resource type="PackedScene" uid="uid://cnet1replw8ku" path="res://scenes/finishflag.tscn" id="20_hsj5a"]
 [ext_resource type="PackedScene" uid="uid://6ysqywp4u3k3" path="res://Levels/ui.tscn" id="21_w38ni"]
+[ext_resource type="PackedScene" uid="uid://c6qf213uv40jl" path="res://scenes/iranianoil.tscn" id="22_uclwg"]
 
 [sub_resource type="Resource" id="Resource_34erp"]
 script = ExtResource("3_77x7w")
@@ -375,6 +376,12 @@ position = Vector2(27187, 368)
 position = Vector2(-5904, -921)
 
 [node name="ui" parent="." instance=ExtResource("21_w38ni")]
+
+[node name="Area2D3" parent="." instance=ExtResource("17_c7pbv")]
+position = Vector2(2068, 569)
+
+[node name="Area2D4" parent="." instance=ExtResource("22_uclwg")]
+position = Vector2(1517, 559)
 
 [connection signal="pressed" from="Popup/back" to="Popup/back" method="_on_pressed"]
 [connection signal="pressed" from="Popup/close" to="Popup/close" method="_on_pressed"]
