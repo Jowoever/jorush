@@ -1,10 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://0kjy3uw3mi5n"]
+[gd_scene load_steps=9 format=3 uid="uid://0kjy3uw3mi5n"]
 
 [ext_resource type="AudioStream" uid="uid://c6m6dg7ohgq4u" path="res://Audio/mouse-click-sound-fx.mp3" id="1_auc25"]
 [ext_resource type="Script" uid="uid://be4m384cfxvm1" path="res://scenes/info.gd" id="1_e7ead"]
 [ext_resource type="Texture2D" uid="uid://b3h2xxisdfb3c" path="res://backgrounds/143dba5abfe2f2b7b98020331d4feb14.png" id="2_by3jj"]
 [ext_resource type="AudioStream" uid="uid://0ovbeb3fij3" path="res://Audio/SpotiDownloader.com - alien radio!! - AQUASINE.mp3" id="4_fafeh"]
+[ext_resource type="Texture2D" uid="uid://bxve4f58tk030" path="res://Images/Pickups/Fuel.png" id="4_nd1px"]
+[ext_resource type="Texture2D" uid="uid://bke1hf572xmri" path="res://Images/Terrain/finishflag.png" id="5_dnut7"]
 [ext_resource type="Texture2D" uid="uid://ctruelgccu1s8" path="res://Images/Characters/mooouh-removebg-preview.png" id="5_rtcvn"]
+[ext_resource type="Texture2D" uid="uid://ckwtugas81phy" path="res://Images/Pickups/Coin5.png" id="8_7m2fa"]
 
 [node name="mainmen" type="Control"]
 layout_mode = 3
@@ -71,6 +74,16 @@ position = Vector2(503.99997, 318.00003)
 scale = Vector2(1.8555555, 1.1805557)
 texture = ExtResource("2_by3jj")
 
+[node name="Fuel" type="Sprite2D" parent="ParallaxBackground"]
+position = Vector2(214.00002, 412.00003)
+scale = Vector2(0.185, 0.19249995)
+texture = ExtResource("4_nd1px")
+
+[node name="Finishflag" type="Sprite2D" parent="ParallaxBackground"]
+position = Vector2(243, 302)
+scale = Vector2(0.22940266, 0.24395162)
+texture = ExtResource("5_dnut7")
+
 [node name="BackgroundMusic" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_fafeh")
 volume_db = 10.0
@@ -83,14 +96,33 @@ scale = Vector2(0.62, 0.682)
 texture = ExtResource("5_rtcvn")
 
 [node name="MooouhRemovebgPreview2" type="Sprite2D" parent="."]
-position = Vector2(1077, 414.25)
-scale = Vector2(0.19600001, 0.24500006)
+position = Vector2(1058, 414.25)
+scale = Vector2(0.27199998, 0.24500006)
 texture = ExtResource("5_rtcvn")
 
 [node name="MooouhRemovebgPreview3" type="Sprite2D" parent="."]
-position = Vector2(249.125, 377.74997)
+position = Vector2(895, 404)
 scale = Vector2(0.1115, 0.11899986)
 texture = ExtResource("5_rtcvn")
+
+[node name="Coin5" type="Sprite2D" parent="."]
+position = Vector2(811.25, 439)
+scale = Vector2(0.2275003, 0.15000013)
+texture = ExtResource("8_7m2fa")
+
+[node name="Coin6" type="Sprite2D" parent="."]
+position = Vector2(212, 567)
+texture = ExtResource("8_7m2fa")
+
+[node name="Coin7" type="Sprite2D" parent="."]
+position = Vector2(268.25, 461.25)
+scale = Vector2(0.43749997, 0.36249992)
+texture = ExtResource("8_7m2fa")
+
+[node name="Fuel" type="Sprite2D" parent="."]
+position = Vector2(1136.0001, 476)
+scale = Vector2(0.32000002, 0.36500004)
+texture = ExtResource("4_nd1px")
 
 [connection signal="pressed" from="Start" to="Info" method="_on_start_pressed"]
 [connection signal="pressed" from="Options" to="Info" method="_on_options_pressed"]
