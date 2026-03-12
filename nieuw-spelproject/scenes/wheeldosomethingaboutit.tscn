@@ -10,9 +10,10 @@ gravity_scale = 30.0
 
 [node name="Sprite2D" type="Sprite2D" parent="." groups=["players"]]
 modulate = Color(1.478182, 1.478182, 1.478182, 1)
-position = Vector2(-0.99999905, -0.9999995)
-scale = Vector2(1.609, 1.5)
+position = Vector2(-1, 0)
+scale = Vector2(1.314, 1.336)
 texture = ExtResource("1_n76ux")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 shape = SubResource("CircleShape2D_c65p7")

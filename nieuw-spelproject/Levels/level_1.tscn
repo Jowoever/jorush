@@ -378,10 +378,34 @@ position = Vector2(-5904, -921)
 [node name="ui" parent="." instance=ExtResource("21_w38ni")]
 
 [node name="Area2D3" parent="." instance=ExtResource("17_c7pbv")]
-position = Vector2(2068, 569)
+position = Vector2(2083, 655)
 
 [node name="Area2D4" parent="." instance=ExtResource("22_uclwg")]
 position = Vector2(1517, 559)
+
+[node name="Area2D5" parent="." instance=ExtResource("17_c7pbv")]
+position = Vector2(2330, 743)
+
+[node name="Area2D6" parent="." instance=ExtResource("17_c7pbv")]
+position = Vector2(2619, 834)
+
+[node name="Area2D7" parent="." instance=ExtResource("17_c7pbv")]
+position = Vector2(5004, 910)
+
+[node name="Area2D8" parent="." instance=ExtResource("17_c7pbv")]
+position = Vector2(5262, 844)
+
+[node name="Area2D9" parent="." instance=ExtResource("17_c7pbv")]
+position = Vector2(5520, 738)
+
+[node name="Area2D10" parent="." instance=ExtResource("17_c7pbv")]
+position = Vector2(9140, -425)
+
+[node name="Area2D11" parent="." instance=ExtResource("17_c7pbv")]
+position = Vector2(9507, -461)
+
+[node name="Area2D12" parent="." instance=ExtResource("17_c7pbv")]
+position = Vector2(9990, -468)
 
 [connection signal="pressed" from="Popup/back" to="Popup/back" method="_on_pressed"]
 [connection signal="pressed" from="Popup/close" to="Popup/close" method="_on_pressed"]
