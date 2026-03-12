@@ -19,8 +19,8 @@
 [ext_resource type="AudioStream" uid="uid://bxhaec2s564vb" path="res://Audio/SpotiDownloader.com - EXPRESSWAY - AQUASINE.mp3" id="14_2hkqn"]
 [ext_resource type="Texture2D" uid="uid://ctruelgccu1s8" path="res://Images/Characters/mooouh-removebg-preview.png" id="15_34erp"]
 [ext_resource type="PackedScene" uid="uid://d0u7i4qtnalle" path="res://scenes/coin.tscn" id="17_c7pbv"]
-[ext_resource type="PackedScene" uid="uid://cnet1replw8ku" path="res://scenes/finishflag.tscn" id="20_hsj5a"]
 [ext_resource type="PackedScene" uid="uid://6ysqywp4u3k3" path="res://Levels/ui.tscn" id="21_w38ni"]
+[ext_resource type="PackedScene" uid="uid://cn045uc8quopg" path="res://flag.tscn" id="22_8x6gh"]
 [ext_resource type="PackedScene" uid="uid://c6qf213uv40jl" path="res://scenes/iranianoil.tscn" id="22_uclwg"]
 
 [sub_resource type="Resource" id="Resource_34erp"]
@@ -152,17 +152,17 @@ script = ExtResource("3_77x7w")
 position = Vector2(7395.4453, 1757.2305)
 texture_idx = -3
 
-[sub_resource type="Resource" id="Resource_qvmnn"]
-script = ExtResource("3_77x7w")
-position = Vector2(47779.695, 1928.3271)
-texture_idx = 1
-
 [sub_resource type="Resource" id="Resource_q1aj6"]
 script = ExtResource("3_77x7w")
 position = Vector2(41320.246, 6053.752)
 point_in = Vector2(-4568.254, -268.7207)
 point_out = Vector2(4568.254, 268.7207)
 texture_idx = -7
+
+[sub_resource type="Resource" id="Resource_qvmnn"]
+script = ExtResource("3_77x7w")
+position = Vector2(47779.695, 1928.3271)
+texture_idx = 1
 
 [sub_resource type="Resource" id="Resource_e3ngr"]
 script = ExtResource("3_77x7w")
@@ -419,12 +419,12 @@ metadata/_custom_type_script = "uid://nc5bfedvnpgm"
 script = ExtResource("1_k2bse")
 
 [node name="Player" parent="." instance=ExtResource("1_n0qsc")]
-position = Vector2(21928, -1403)
+position = Vector2(73215, 7710)
 mass = 8.175
 gravity_scale = 4.452
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(0, -141)
+position = Vector2(342, -27)
 zoom = Vector2(0.25, 0.25)
 drag_horizontal_offset = 0.8
 drag_left_margin = 1.0
@@ -549,9 +549,6 @@ texture = ExtResource("15_34erp")
 
 [node name="Area2D" parent="." instance=ExtResource("17_c7pbv")]
 position = Vector2(-2558, -388)
-
-[node name="finishflag" parent="." instance=ExtResource("20_hsj5a")]
-position = Vector2(75693, 9163)
 
 [node name="Area2D2" parent="." instance=ExtResource("17_c7pbv")]
 position = Vector2(-2782, -444)
@@ -961,8 +958,10 @@ position = Vector2(51232, -682)
 position = Vector2(51316, -629)
 
 [node name="Area2D77" parent="." instance=ExtResource("22_uclwg")]
-position = Vector2(50458, -706)
+position = Vector2(50460, -839)
+
+[node name="Node2D" parent="." instance=ExtResource("22_8x6gh")]
+position = Vector2(76795, 9287)
 
 [connection signal="pressed" from="Popup/back" to="Popup/back" method="_on_pressed"]
 [connection signal="pressed" from="Popup/close" to="Popup/close" method="_on_pressed"]
-[connection signal="body_entered" from="finishflag" to="." method="_on_body_entered"]
