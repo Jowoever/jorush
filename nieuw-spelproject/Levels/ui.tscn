@@ -23,7 +23,7 @@ offset_right = 129.0
 offset_bottom = 107.0
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 64
-text = "o"
+text = "0"
 
 [node name="Fuel" type="TextureRect" parent="."]
 offset_left = 9.0
