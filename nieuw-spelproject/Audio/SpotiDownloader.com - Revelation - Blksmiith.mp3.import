@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://qaw3snio08pc"
+path="res://.godot/imported/SpotiDownloader.com - Revelation - Blksmiith.mp3-e1e4ccab3a83487d5abbfe641fc3b9d5.mp3str"
+
+[deps]
+
+source_file="res://Audio/SpotiDownloader.com - Revelation - Blksmiith.mp3"
+dest_files=["res://.godot/imported/SpotiDownloader.com - Revelation - Blksmiith.mp3-e1e4ccab3a83487d5abbfe641fc3b9d5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

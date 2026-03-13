@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://0kjy3uw3mi5n"]
+[gd_scene load_steps=11 format=3 uid="uid://0kjy3uw3mi5n"]
 
 [ext_resource type="AudioStream" uid="uid://c6m6dg7ohgq4u" path="res://Audio/mouse-click-sound-fx.mp3" id="1_auc25"]
 [ext_resource type="Script" uid="uid://be4m384cfxvm1" path="res://scenes/info.gd" id="1_e7ead"]
@@ -8,6 +8,29 @@
 [ext_resource type="Texture2D" uid="uid://bke1hf572xmri" path="res://Images/Terrain/finishflag.png" id="5_dnut7"]
 [ext_resource type="Texture2D" uid="uid://ctruelgccu1s8" path="res://Images/Characters/mooouh-removebg-preview.png" id="5_rtcvn"]
 [ext_resource type="Texture2D" uid="uid://ckwtugas81phy" path="res://Images/Pickups/Coin5.png" id="8_7m2fa"]
+
+[sub_resource type="FontFile" id="FontFile_nd1px"]
+cache/0/100/0/ascent = 0.0
+cache/0/100/0/descent = 0.0
+cache/0/100/0/underline_position = 0.0
+cache/0/100/0/underline_thickness = 0.0
+cache/0/100/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_dnut7"]
+font = SubResource("FontFile_nd1px")
+font_size = 100
+outline_size = 6
+outline_color = Color(0.7018067, 0.02253501, 0.76766634, 1)
+shadow_size = 50
+shadow_color = Color(0.103391506, 0.02452071, 0.3882055, 1)
+stacked_outline_count = 1
+stacked_outline_0/size = 5
+stacked_outline_0/color = Color(0.96, 0.06719999, 0.06719999, 1)
 
 [node name="mainmen" type="Control"]
 layout_mode = 3
@@ -83,6 +106,15 @@ texture = ExtResource("4_nd1px")
 position = Vector2(243, 302)
 scale = Vector2(0.22940266, 0.24395162)
 texture = ExtResource("5_dnut7")
+
+[node name="Label" type="Label" parent="ParallaxBackground"]
+offset_right = 1122.0
+offset_bottom = 261.0
+text = "MGM"
+label_settings = SubResource("LabelSettings_dnut7")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
 
 [node name="BackgroundMusic" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_fafeh")

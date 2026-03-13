@@ -9,4 +9,4 @@ func _on_flag_body_entered(body: Node2D):
 	
 	if body.is_in_group("player"):
 		print("Player touched flag!")
-		get_tree().change_scene_to_file("res://victoryyy.tscn")
+		get_tree().change_scene_to_file("res://Levels/victoryy.tscn")
