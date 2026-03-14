@@ -28,6 +28,7 @@ MainTheme="*res://scenes/main theme.tscn"
 
 [display]
 
+window/stretch/mode="viewport"
 window/stretch/aspect="keep_height"
 
 [dotnet]
