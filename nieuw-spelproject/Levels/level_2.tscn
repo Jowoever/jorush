@@ -10,18 +10,18 @@
 [ext_resource type="Texture2D" uid="uid://cvkm2nwhfsf0p" path="res://Images/Terrain/Grass.png" id="8_7t8bs"]
 [ext_resource type="Script" uid="uid://0lhxan4cqrc1" path="res://addons/rmsmartshape/materials/edge_material_metadata.gd" id="9_p4q1e"]
 [ext_resource type="Script" uid="uid://d0xjijisx1woh" path="res://addons/rmsmartshape/materials/edge_material.gd" id="10_qfaov"]
-[ext_resource type="Script" path="res://addons/rmsmartshape/normal_range.gd" id="11_2u4r5"]
+[ext_resource type="Script" uid="uid://d218yx0d1ilsn" path="res://addons/rmsmartshape/normal_range.gd" id="11_2u4r5"]
 [ext_resource type="Script" uid="uid://nc5bfedvnpgm" path="res://addons/rmsmartshape/materials/shape_material.gd" id="12_e3qtj"]
 [ext_resource type="PackedScene" uid="uid://d0u7i4qtnalle" path="res://scenes/coin.tscn" id="13_tsayu"]
 [ext_resource type="Script" uid="uid://dn1424topx1se" path="res://scenes/popup.gd" id="14_8a8q3"]
-[ext_resource type="Script" path="res://scenes/back.gd" id="15_7y4yh"]
+[ext_resource type="Script" uid="uid://doeah41rd06n" path="res://scenes/back.gd" id="15_7y4yh"]
 [ext_resource type="AudioStream" uid="uid://c6m6dg7ohgq4u" path="res://Audio/mouse-click-sound-fx.mp3" id="16_0psnq"]
 [ext_resource type="Script" uid="uid://ckuo550kbn88f" path="res://scenes/close.gd" id="17_r4pcd"]
 [ext_resource type="AudioStream" uid="uid://bxhaec2s564vb" path="res://Audio/SpotiDownloader.com - EXPRESSWAY - AQUASINE.mp3" id="18_dq3ye"]
 [ext_resource type="Texture2D" uid="uid://ctruelgccu1s8" path="res://Images/Characters/mooouh-removebg-preview.png" id="19_vs4e2"]
-[ext_resource type="PackedScene" uid="uid://6ysqywp4u3k3" path="res://Levels/ui.tscn" id="20_q6jj4"]
 [ext_resource type="PackedScene" uid="uid://c6qf213uv40jl" path="res://scenes/iranianoil.tscn" id="21_b4bil"]
-[ext_resource type="PackedScene" uid="uid://cn045uc8quopg" path="res://flag.tscn" id="22_1t40t"]
+[ext_resource type="PackedScene" uid="uid://ch5l25egleet8" path="res://flag2.tscn" id="22_cnrwi"]
+[ext_resource type="PackedScene" uid="uid://du4d8nlobke75" path="res://Levels/ui2.tscn" id="22_knkse"]
 
 [sub_resource type="Resource" id="Resource_34erp"]
 script = ExtResource("4_fll1h")
@@ -436,19 +436,8 @@ position = Vector2(763, -405)
 [node name="Area2D2" parent="." instance=ExtResource("13_tsayu")]
 position = Vector2(496, -468)
 
-[node name="ui" parent="." instance=ExtResource("20_q6jj4")]
-
-[node name="Area2D3" parent="." instance=ExtResource("13_tsayu")]
-position = Vector2(2083, 655)
-
 [node name="Area2D4" parent="." instance=ExtResource("21_b4bil")]
 position = Vector2(1517, 559)
-
-[node name="Area2D5" parent="." instance=ExtResource("13_tsayu")]
-position = Vector2(2330, 743)
-
-[node name="Area2D6" parent="." instance=ExtResource("13_tsayu")]
-position = Vector2(2619, 834)
 
 [node name="Area2D7" parent="." instance=ExtResource("13_tsayu")]
 position = Vector2(46700, 621)
@@ -592,9 +581,6 @@ rotation = 0.044908468
 [node name="Area2D44" parent="." instance=ExtResource("21_b4bil")]
 position = Vector2(45738, 4618)
 
-[node name="Node2D" parent="." instance=ExtResource("22_1t40t")]
-position = Vector2(57921, 5760)
-
 [node name="Area2D145" parent="." instance=ExtResource("13_tsayu")]
 position = Vector2(48717.996, 1012)
 
@@ -662,7 +648,7 @@ position = Vector2(26302, 3813)
 position = Vector2(26524, 3935)
 
 [node name="Area2D59" parent="." instance=ExtResource("13_tsayu")]
-position = Vector2(26720, 4061)
+position = Vector2(26757, 4006)
 
 [node name="Area2D60" parent="." instance=ExtResource("13_tsayu")]
 position = Vector2(26947, 4049)
@@ -671,10 +657,10 @@ position = Vector2(26947, 4049)
 position = Vector2(27169, 4171)
 
 [node name="Area2D62" parent="." instance=ExtResource("13_tsayu")]
-position = Vector2(27365, 4297)
+position = Vector2(27371, 4205)
 
 [node name="Area2D63" parent="." instance=ExtResource("13_tsayu")]
-position = Vector2(27526, 4350)
+position = Vector2(27587, 4270)
 
 [node name="Area2D64" parent="." instance=ExtResource("13_tsayu")]
 position = Vector2(27778, 4334)
@@ -755,7 +741,7 @@ position = Vector2(32906, 6155)
 position = Vector2(33167, 6179)
 
 [node name="Area2D90" parent="." instance=ExtResource("13_tsayu")]
-position = Vector2(33363, 6305)
+position = Vector2(33386, 6222)
 
 [node name="Area2D91" parent="." instance=ExtResource("13_tsayu")]
 position = Vector2(33593, 6233)
@@ -785,13 +771,18 @@ position = Vector2(35094, 6683)
 position = Vector2(35355, 6707)
 
 [node name="Area2D100" parent="." instance=ExtResource("13_tsayu")]
-position = Vector2(35551, 6833)
+position = Vector2(35588, 6773)
 
 [node name="Area2D101" parent="." instance=ExtResource("13_tsayu")]
 position = Vector2(35781, 6761)
 
 [node name="Area2D102" parent="." instance=ExtResource("13_tsayu")]
 position = Vector2(36042, 6785)
+
+[node name="Node2D" parent="." instance=ExtResource("22_cnrwi")]
+position = Vector2(57938, 5735)
+
+[node name="ui" parent="." instance=ExtResource("22_knkse")]
 
 [connection signal="pressed" from="Popup/back" to="Popup/back" method="_on_pressed"]
 [connection signal="pressed" from="Popup/close" to="Popup/close" method="_on_pressed"]

@@ -11,9 +11,9 @@
 [ext_resource type="Script" uid="uid://llobjh5hvry" path="res://addons/rmsmartshape/shapes/mesh.gd" id="5_xoyoh"]
 [ext_resource type="Texture2D" uid="uid://cvkm2nwhfsf0p" path="res://Images/Terrain/Grass.png" id="8_1rr3k"]
 [ext_resource type="Script" uid="uid://d0xjijisx1woh" path="res://addons/rmsmartshape/materials/edge_material.gd" id="10_hsj5a"]
-[ext_resource type="Script" path="res://addons/rmsmartshape/normal_range.gd" id="10_lk57d"]
+[ext_resource type="Script" uid="uid://d218yx0d1ilsn" path="res://addons/rmsmartshape/normal_range.gd" id="10_lk57d"]
 [ext_resource type="Script" uid="uid://dn1424topx1se" path="res://scenes/popup.gd" id="11_34erp"]
-[ext_resource type="Script" path="res://scenes/back.gd" id="12_k2bse"]
+[ext_resource type="Script" uid="uid://doeah41rd06n" path="res://scenes/back.gd" id="12_k2bse"]
 [ext_resource type="AudioStream" uid="uid://c6m6dg7ohgq4u" path="res://Audio/mouse-click-sound-fx.mp3" id="13_c7pbv"]
 [ext_resource type="Script" uid="uid://ckuo550kbn88f" path="res://scenes/close.gd" id="13_lk57d"]
 [ext_resource type="AudioStream" uid="uid://bxhaec2s564vb" path="res://Audio/SpotiDownloader.com - EXPRESSWAY - AQUASINE.mp3" id="14_2hkqn"]
@@ -704,7 +704,7 @@ position = Vector2(21228, -1378)
 position = Vector2(21227, -1178)
 
 [node name="Area2D53" parent="." instance=ExtResource("17_c7pbv")]
-position = Vector2(21464, -1777)
+position = Vector2(21859, -1130)
 
 [node name="Area2D54" parent="." instance=ExtResource("17_c7pbv")]
 position = Vector2(21460, -1588)

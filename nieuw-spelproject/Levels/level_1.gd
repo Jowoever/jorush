@@ -3,10 +3,15 @@ extends Node2D
 var coins_collected = 0
 
 func _ready():
-	# Optional: Initialize UI with default values
-	update_fuel_ui(100)  # Set fuel UI to full at start
-	# Coin label starts at 0 (already set in scene)
-
+	# The UI is already in the scene, just find it
+	var ui_node = get_ui_node()
+	if ui_node:
+		print("Found UI node: ", ui_node.name)
+		update_fuel_ui(100)
+	else:
+		print("UI node not found in scene!")
+		
+		
 func add_coins(amount):
 	coins_collected += amount
 	# Update coin label
@@ -14,6 +19,20 @@ func add_coins(amount):
 		$ui/coin/Label.text = str(coins_collected)
 	else:
 		print("Coin label not found!")
+		
+func get_ui_node():
+	# Try to find UI node by common names
+	for child in get_children():
+		if child.name in ["ui", "UI", "Ui", "ui2", "UI2"]:
+			return child
+		
+		# Also check if it's the first child with "ui" in the name
+		if "ui" in child.name.to_lower():
+			return child
+	
+	return null
+
+# Rest of your functions (add_coins, update_fuel_ui) remain the same
 
 func update_fuel_ui(value):
 	# Update fuel label

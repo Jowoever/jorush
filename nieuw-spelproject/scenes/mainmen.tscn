@@ -10,6 +10,9 @@
 [ext_resource type="Texture2D" uid="uid://ckwtugas81phy" path="res://Images/Pickups/Coin5.png" id="8_7m2fa"]
 
 [sub_resource type="FontFile" id="FontFile_nd1px"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 cache/0/100/0/ascent = 0.0
 cache/0/100/0/descent = 0.0
 cache/0/100/0/underline_position = 0.0
@@ -110,7 +113,9 @@ texture = ExtResource("5_dnut7")
 [node name="Label" type="Label" parent="ParallaxBackground"]
 offset_right = 1122.0
 offset_bottom = 261.0
-text = "MGM"
+text = "Mountain
+Hike
+Motoring!!!"
 label_settings = SubResource("LabelSettings_dnut7")
 horizontal_alignment = 1
 vertical_alignment = 1
